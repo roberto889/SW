@@ -1,0 +1,92 @@
+h1 { color: rgb(240, 230, 230);
+    background-color: #1b6cd6;
+    line-height: 40px;
+    font-size: 40px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    
+}
+
+h2 { color: rgb(48, 66, 167);
+    background-color: #ffffff;
+    line-height: 40px;
+    font-size: 30px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    text-decoration: underline;
+}
+p { color: blue;
+    line-height: 40px;
+    font-size: 20px;
+    font-family: Arial, sans-serif;
+    text-align: justify;
+}
+
+body { background-color: aquamarine;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 10px;
+    text-align: left;
+
+}
+
+ol { background-color: yellow;
+    text-decoration: overline;
+
+}
+
+.caliente { color: rgb(12, 11, 11);
+    background-color: wheat;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+.frío { color: blue;
+    background-color: yellow;
+    font-size: 20px;
+    font-family: 'helvetica', serif;
+    font-weight: bold;
+}
+
+
+
+.contenedor {
+    background-color: pink;
+    
+    border: solid;
+    border-color: brown;
+    border-width: 10px;
+
+    border-style:groove;
+
+   border-top-left-radius:50px ;
+    /*
+    border-top-right-radius:50px ;
+    border-bottom-right-radius:40px ;
+    border-bottom-left-radius:100px ;
+    /*
+
+    /* padding-left: 40px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 100px;
+    */
+    padding: 10px 10px 100px 40px;
+   
+    /*margin-top: 50px;
+    margin-left: 40px;
+    */
+    margin: 30px 20px 100px 30px;	
+
+    height: 100px;
+    width: 150px;
+
+    
+    
+}
+
+p {text-align: justify;}
+   
+a:hover {color: yellow;}
