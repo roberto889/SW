@@ -31,7 +31,7 @@ body { background-color: aquamarine;
 
 }
 
-ol { background-color: yellow;
+ol { background-color: rgb(1, 255, 1);
     text-decoration: overline;
 
 }
@@ -87,6 +87,10 @@ ol { background-color: yellow;
     
 }
 
-p {text-align: justify;}
+p {text-align: justify;
+/*display: inline; */
+margin-top:0px ;
+margin-bottom: 0px;
+}
    
 a:hover {color: yellow;}
