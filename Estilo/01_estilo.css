@@ -52,7 +52,25 @@ ol { background-color: rgb(1, 255, 1);
 
 
 
-.contenedor {
+.contenedor-interno {
+
+    background-color: pink;
+    width: 100%;
+    height: 100%;
+    border: solid;
+    border-color: brown;
+    border-width: 10px;
+    box-sizing: border-box;
+
+
+    border-style:groove;
+
+   border-top-left-radius:50px ;
+}
+   .contenedor-externo {
+    width: 300px;
+    height: 300px;
+    box-sizing: border-box;
     background-color: pink;
     
     border: solid;
@@ -93,4 +111,59 @@ margin-top:0px ;
 margin-bottom: 0px;
 }
    
-a:hover {color: yellow;}
+a:link {
+    color: rgb(172, 76, 47);
+}
+
+a:visited {
+    color: yellow;
+}
+
+a:hover {
+    color: rgb(140, 139, 165);
+}
+
+a:active {
+    color: rgb(100, 40, 156);
+}
+
+#forma1 {
+    color: red;
+}
+
+#forma2 {
+    color: blue;
+}
+
+#forma3 {
+    color: green;
+}
+
+#forma4 {
+    color: orange;
+}
+
+#forma5 {
+    color: purple;
+}
+
+/* Estilos específicos para cada enlace */
+a[href="#forma1"] {
+    color: red;
+}
+
+a[href="#forma2"] {
+    color: blue;
+}
+
+a[href="#forma3"] {
+    color: green;
+}
+
+a[href="#forma4"] {
+    color: orange;
+}
+
+a[href="#forma5"] {
+    color: purple;
+}
