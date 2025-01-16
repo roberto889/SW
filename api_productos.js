@@ -7,6 +7,7 @@ let tienda=[
     {nombre:'Pera', precio:2, tipo: 'Fruta'},
     {nombre:'Manzana', precio:1.5, tipo: 'Fruta'},
     {nombre:'Salchichas', precio:34.2, tipo: 'Carne'},
+    {nombre:'Pollo', precio:12.3, tipo: 'Carne'},
 ];
 
 db_conexion=conectar();
