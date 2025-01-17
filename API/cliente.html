@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo num. 1 para trabajar con API</title>
+    <style>
+        div {color:white;
+        font-size: 28px;
+    background: linear-gradient(black,blue);}
+    </style>
+</head>
+<body>
+    <!-- Comentario de prueba -->
+    <button id="mostrar">Mostrar </button> <br>
+    <button id="limpiar">Borrar </button>
+    <div id="contenido"></div>
+    <script>
+        document.getElementById("mostrar").addEventListener("click", mostrarParrafo, true);
+        document.getElementById("limpiar").addEventListener("click", limpiarDatosAPI, true);
+        let hueco = document.querySelector("#parrafo");
+        let contenido = document.querySelector("#contenido");
+       
+     function mostrarParrafo()
+        {
+            //contenido.innerHTML = 'Hola Mundo';
+            // console.log('Ha pulsado mostrar usuario');
+            // const url = "http://localhost:3000/operacion=4+5";
+            const url = "http://localhost:3000/belleza";
+            fetch(url)
+                then(res => res.text())
+                .then(data =>{
+                     console.log(data);
+                     hueco.innerHTML = data;
+
+                    })
+                    //  let persona = data.results [0].name;
+                    //  console.log(persona);
+                    //  contenido.innerHTML = `${persona.title} `;
+                    //  contenido.innerHTML += ` ${persona.first} `;
+                    //  contenido.innerHTML += ` ${persona.last} <br>`;
+
+                    //  let url_foto = data.results [0].picture.large;
+                    //  console.log(url_foto);
+                    //  let imagen= `<img src="${url_foto}" alt="Mi ejemplo">`;
+                    //  contenido.innerHTML += `${imagen}<br>`;
+                
+                
+        }
+        function mostrarCosas()
+        {
+            contenido.innerHTML = 'Hola '
+            for(i=0; i<7; i ++)
+            {   
+                if(i==2)
+                    contenido.innerHTML += ' Perros <br>';
+                else
+                    contenido.innerHTML += ` Colegas ${i} <br>`;
+            }
+        }
+        function limpiarDatosAPI()
+        {
+            console.log('Ha pulsado borrar usuario');
+            contenido.innerHTML = '';
+        }
+    </script>
+</body>
+</html>
