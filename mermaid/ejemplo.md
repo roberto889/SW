@@ -13,6 +13,8 @@ Galicia -.-> 3[Pontevedra]
 Galicia --> 4[Orense] 
 España --> Galicia
 España --> Cantabria
+
+1 --> 3
 ```
 
 ```mermaid
