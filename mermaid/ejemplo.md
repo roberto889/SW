@@ -48,19 +48,17 @@ style A fill:grey
 
 ```
 
+
 ```mermaid
 
-graph TD
+sankey-beta
+Semana,ITET,13
+Semana,cine,7
+Semana,pasear,8
+
  
-
-
-
-
-
-
-
 ```
-
+## Diagrama ER
 :::mermaid
 pie
 title Un gráfico de sectores
@@ -68,3 +66,50 @@ title Un gráfico de sectores
 "Segmento B":75
 
 :::
+
+## Diagrama
+```mermaid
+erDiagram
+
+
+MEN {
+string DNI PK
+string esposa FK
+string nombre
+}
+MEN ||--o{ WOMEN: "cónyuge"
+
+```
+## EUROPA
+:::mermaid
+erDiagram
+MEN {
+    string DNI PK
+    string esposa FK
+    string nombre
+}
+WOMEN {
+    string DNI PK
+    string esposo FK
+    string nombre
+}
+MEN |o--o| WOMEN: Casados
+
+:::
+## ORIENTE
+:::mermaid
+
+erDiagram
+MEN {
+    string DNI PK
+    string esposa FK
+    string nombre
+
+}
+WOMEN {
+    string DNI PK
+    string esposo FK
+    string nombre
+}
+MEN |o--o{ WOMEN: Casados
+

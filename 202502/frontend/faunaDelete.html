@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Eliminar animal</h2>
+
+    <!-- El codigo de animal que se indique, se usa
+         para hacer una lectura o comprobación antes
+         de eliminar el dato--> 
+    <label for="codigoAnimal">Código</label>
+    <input type="number" id="codigoAnimal" value=1 \>
+    <button onclick="cargaPreviaDatos('#codigoAnimal')">Ver datos</button>
+
+    <label for="nombre">Nombre</label>
+    <input type="text" id="nombre"\>
+    <label for="patas">Patas</label>
+    <input type="number" id="patas"\>
+
+    <button onclick="eliminarElemento('#codigoAnimal')">Eliminar</button>
+
+</body>
+</html>

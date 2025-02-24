@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cliente del API doble</title>
+    <script src="funciones.js"></script>
+    <!-- <style> div { border: 2px solid blue; } </style> -->
+    <link rel="stylesheet" href="estilo4.css">
+</head>
+<body>
+
+    <div class="maquetado">
+        <div class="cabecera">Ejemplo de cliente de API (CRUD)</div>
+        <div class="menu" id="menuIzq">
+            <label for="escogeAPI">Aplicación:</label>
+            <select name="escogeAPI" id="opciones">
+                <option value="fauna">Animales</option>
+                <option value="mundo">Ciudades</option>
+            </select>
+            <a href="#" onclick="cargarPaginaEnCaja('controles','Create')">Create</a>
+            <a href="#" onclick="cargarPaginaEnCaja('controles','Read')">Read</a>
+            <a href="#" onclick="cargarPaginaEnCaja('controles','Update')">Update</a>
+            <a href="#" onclick="cargarPaginaEnCaja('controles','Delete')">Delete</a>
+        </div>
+        <div class="ayuda" id="menuDer">
+            <!-- <a href="#" onclick="cargarContenido('contenido','Ayuda')">Ayuda</a> -->
+            <a href="#" onclick="cargarCosa()">Ayuda</a>
+        </div>
+        <div class="contenido" id="resultado">
+            <h2>Resultado</h2>
+            <p>Para que esta página funcione correctamente se necesitan, al menos, tres requisitos: </p>
+            <ol>
+                <li>Esta página se debe descargar desde un servidor web, no sirve si se abre como archivo</li>
+                <li>Debe estar accesible el servidor API</li>
+                <li>Hay que respetar la política de CORS, diseñada en cuanto a direcciones y puertos</li>
+            </ol>
+        </div>
+        <div class="lateral" id="controles">
+            <h2>Controles</h2>
+            <p>Por favor escoja una opción en el menú superior para realizar la acción deseada.</p>
+        </div>
+        <div class="pie-de-pagina">&copy; Javier 2025</div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,22 @@
+Evolución de la API:
++----------------+-----------------------------------------+
+| Fichero        | Descripción                             |
++----------------+-----------------------------------------+
+| 00_xpBase.js   | Estructura básica de API usando express |
+| 01_animales.js | Implementa parte del CRUD: GET y POST   |
+| 02_animales.js | CRUD completo (incluye PUT y DELETE)    |
+| 03_animales.js | Versión ligera (importa 03_animFunc.js) |
+| 03_animFunc.js | Funciones que manejan animales          |
+| Leeme.txt      | Este mismo archivo                      |
+| ejemploMySQL.js| Conexión básica a la base de datos      |
++----------------+-----------------------------------------+
+| 04_dobleAPI.js | Ampliación de la API, doble propósito   |
+| 04_ciudadDB.js | Prototipo de ciudades (GET y database)  |
+| 04_animFunc.js | Funciones que manejan animales          |
++----------------+-----------------------------------------+
+| 05_apiDoble.js | API con doble propósito (urbano y fauna)|
+| 05_ciudadDB.js | Manejar ciudades en database (falta PUT)|
+| 05_animFunc.js | Manejar animales en memoria (lista JSON)|
+| 05_apiFauna.js | API de propósito único (test sólo fauna)|
++----------------+-----------------------------------------+
+

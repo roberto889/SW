@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control del mundo</title>
+</head>
+<body>
+    <h2>Ver el mundo</h2>
+    <button onclick="cargarTablaJSON('#continentes')">Continentes</button>
+    <label for="nombreContinente">Continente</label>
+    <input type="text" id="nombreContinente" value='Europe' \>
+    <button onclick="cargarTablaJSON('#nombreContinente')">Países</button>
+    <label for="filtroCiudades">Filtro de ciudades</label>
+    <form id="filtroCiudades">
+        <input type="text" id="codigoPais" value='ESP' size="8" \>
+        <input type="text" id="inicialCiudad" value='S'  size="4" \>
+        <button onclick="cargarTablaJSON('#filtroCiudades')">Ciudades</button>
+    </form>
+    <label for="codigoCiudad">Ciudad</label>
+    <input type="number" id="codigoCiudad" value=3564 \>
+    <button onclick="cargarTablaJSON('#codigoCiudad')">Ver ciudad</button>
+</body>
+</html>

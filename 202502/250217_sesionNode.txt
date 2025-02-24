@@ -1,0 +1,207 @@
+Microsoft Windows [Versión 10.0.22631.4890]
+(c) Microsoft Corporation. Todos los derechos reservados.
+
+C:\Users\salca>node
+Welcome to Node.js v22.12.0.
+Type ".help" for more information.
+> pila=[]
+[]
+> pila.length
+0
+> pila.push(6)
+1
+> pila.push(12)
+2
+> pila
+[ 6, 12 ]
+> pila.push(25)
+3
+> pila.push(1)
+4
+> pila
+[ 6, 12, 25, 1 ]
+> pila.pop()
+1
+> pila
+[ 6, 12, 25 ]
+> guarda=pila.pop()
+25
+> pila
+[ 6, 12 ]
+> guarda
+25
+> pila.push(100)
+3
+> pila.push(2025)
+4
+> pila
+[ 6, 12, 100, 2025 ]
+> guarda=pila.shift()
+6
+> guarda=pila.shift()
+12
+> guarda=pila.shift()
+100
+> guarda=pila.shift()pila
+guarda=pila.shift()pila
+                   ^^^^
+
+Uncaught SyntaxError: Unexpected identifier 'pila'
+> pila
+[ 2025 ]
+> pila.push(6)
+2
+> pila.push(16)
+3
+> pila.push(26)
+4
+> pila
+[ 2025, 6, 16, 26 ]
+> pila.unshift(13)
+5
+> pila
+[ 13, 2025, 6, 16, 26 ]
+> guarda=pila.splice(2,2)
+[ 6, 16 ]
+> pila
+[ 13, 2025, 26 ]
+> guarda
+[ 6, 16 ]
+> pila.splice(2,0,13)
+[]
+> pila
+[ 13, 2025, 13, 26 ]
+> pila.splice(2,0,200)
+[]
+> pila
+[ 13, 2025, 200, 13, 26 ]
+> pila.splice(3,1,100)
+[ 13 ]
+> pila
+[ 13, 2025, 200, 100, 26 ]
+> stack=pila
+[ 13, 2025, 200, 100, 26 ]
+>
+>
+> pila
+[ 13, 2025, 200, 100, 26 ]
+> stack
+[ 13, 2025, 200, 100, 26 ]
+> pila.splice(2,1)
+[ 200 ]
+> pila
+[ 13, 2025, 100, 26 ]
+> stack
+[ 13, 2025, 100, 26 ]
+> cesta=new(pila)
+Uncaught TypeError: pila is not a constructor
+> cesta=new pila
+Uncaught TypeError: pila is not a constructor
+> pila.push('Javier')
+5
+> pila
+[ 13, 2025, 100, 26, 'Javier' ]
+> moto={ marca:'Honda', cilindrada: 250, color:'azul' }
+{ marca: 'Honda', cilindrada: 250, color: 'azul' }
+> pila.push(moto)
+6
+> pila
+[
+  13,
+  2025,
+  100,
+  26,
+  'Javier',
+  { marca: 'Honda', cilindrada: 250, color: 'azul' }
+]
+> otra= [ 13, 2025, 100, 26, 'Javier' ]
+[ 13, 2025, 100, 26, 'Javier' ]
+> pila.push(otra)
+7
+> pila
+[
+  13,
+  2025,
+  100,
+  26,
+  'Javier',
+  { marca: 'Honda', cilindrada: 250, color: 'azul' },
+  [ 13, 2025, 100, 26, 'Javier' ]
+]
+> pila.length
+7
+> pila.splice(3,0,otra)
+[]
+> pila
+[
+  13,
+  2025,
+  100,
+  [ 13, 2025, 100, 26, 'Javier' ],
+  26,
+  'Javier',
+  { marca: 'Honda', cilindrada: 250, color: 'azul' },
+  [ 13, 2025, 100, 26, 'Javier' ]
+]
+> otra.shift()
+13
+> otra
+[ 2025, 100, 26, 'Javier' ]
+> pila
+[
+  13,
+  2025,
+  100,
+  [ 2025, 100, 26, 'Javier' ],
+  26,
+  'Javier',
+  { marca: 'Honda', cilindrada: 250, color: 'azul' },
+> moto
+{ marca: 'Honda', cilindrada: 250, color: 'azul' }
+> moto.keys()
+Uncaught TypeError: moto.keys is not a function
+> keys(moto)
+Uncaught ReferenceError: keys is not defined
+> claves=Object.keys(moto)
+[ 'marca', 'cilindrada', 'color' ]
+> moto.cilindrada
+250
+> moto['color']
+'azul'
+> moto
+{ marca: 'Honda', cilindrada: 250, color: 'azul' }
+> claves=Object.keys(moto)
+[ 'marca', 'cilindrada', 'color' ]
+> claves[0]
+'marca'
+> claves[1]
+'cilindrada'
+> claves[2]
+'color'
+> moto[claves[2]]
+'azul'
+> for (i=0; i<3 ; i++)
+... moto[claves[i]];
+'azul'
+> for (i=0; i<3 ; i++)
+... console.log(moto[claves[i]]);
+Honda
+250
+azul
+undefined
+> for (i=0; i< claves.length ; i++)
+... console.log(moto[claves[i]]);
+Honda
+250
+azul
+undefined
+>
+> mi_moto={marca:'peugeot', cilindrada:125, color:'gris' }
+{ marca: 'peugeot', cilindrada: 125, color: 'gris' }
+> for (i=0; i< claves.length ; i++)
+... console.log(mi_moto[claves[i]]);
+peugeot
+125
+gris
+undefined
+>
